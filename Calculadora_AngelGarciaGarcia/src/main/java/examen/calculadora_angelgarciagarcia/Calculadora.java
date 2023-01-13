@@ -11,7 +11,7 @@ public class Calculadora {
     
     static Scanner scanner = new Scanner(System.in);
     static int opcion = -1; //opción del menú
-    static int numero1 = 0, numero2 = 0; //Variables de entrada
+    static float numero1 = 0, numero2 = 0; //Variables de entrada
 
     public static void main(String[] args) {
 
@@ -62,7 +62,7 @@ public class Calculadora {
     //Método para recoger las variables de entrada
     public static void pideNumeros() {
         System.out.println("Introduce el primer número:");
-        numero1 = Integer.parseInt(scanner.nextLine());
+        numero1 = Integer.parseInt(scanner.nextLine());    // si hubiera que cambiar esto tambien, solo habria que poner: numero1 = scanner.nextFloat();
 
         System.out.println("Introduce el segundo número:");
         numero2 = Integer.parseInt(scanner.nextLine());
